@@ -22,12 +22,12 @@ namespace eWebsite.Controllers
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, AppDbContext context)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
+            _signInManager = signInManager; 
             _context = context;
         }
         public async Task<IActionResult> Users()
         {
-            var users = await _context.Users.ToListAsync();
+            var users = await _context.GetUsers().ToListAsync();
             return View(users);
         }
 
