@@ -23,7 +23,7 @@ namespace eWebsite.Controllers
         {
             _userManager = userManager;
             _signInManager = signInManager; 
-            _context = context;
+            _context = context; 
         }
         public async Task<IActionResult> Users()
         {

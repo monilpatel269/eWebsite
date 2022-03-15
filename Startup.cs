@@ -46,6 +46,7 @@ namespace eWebsite
 
             //Authentication and authorization
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
             services.AddMemoryCache();
             services.AddSession();
             services.AddAuthentication(options =>
