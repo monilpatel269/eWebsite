@@ -33,18 +33,6 @@ namespace eWebsite.Data
         public DbSet<Cinema> Cinemas { get; set; }
         public DbSet<Producer> Producers { get; set; }
 
-        private DbSet<ApplicationUser> users;
-
-        public DbSet<ApplicationUser> GetUsers()
-        {
-            return users;
-        }
-
-        public void SetUsers(DbSet<ApplicationUser> value)
-        {
-            users = value;
-        }
-
         //Orders related tables
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }

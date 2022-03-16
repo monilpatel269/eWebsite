@@ -27,7 +27,7 @@ namespace eWebsite.Controllers
         }
         public async Task<IActionResult> Users()
         {
-            var users = await _context.GetUsers().ToListAsync();
+            var users = await _context.Users.ToListAsync();
             return View(users);
         }
 
