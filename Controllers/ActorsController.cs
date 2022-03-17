@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace eWebsite.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
+    //[Authorize(Roles = UserRoles.Admin)]
     public class ActorsController : Controller
     {
         private readonly IActorsService _service;
@@ -46,6 +46,13 @@ namespace eWebsite.Controllers
         //Get: Actors/Details/1
         [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+            if (actorDetails == null) return View("NotFound");
+            return View(actorDetails);
+        }
+        //Get: Actors/Edit/1
+        public async Task<IActionResult> Edit(int id)
         {
             var actorDetails = await _service.GetByIdAsync(id);
             if (actorDetails == null) return View("NotFound");

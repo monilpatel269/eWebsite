@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace eWebsite.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
+   // [Authorize(Roles = UserRoles.Admin)]
     public class ProducersController : Controller
     {
         private readonly IProducersService _service;
