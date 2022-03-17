@@ -23,7 +23,7 @@ namespace eWebsite.Models
 
         //Reltionships
         public List<Actor_Movie> Actors_Movies { get; set; }
-
+        
         //Cinema
         public int CinemaId { get; set; }
         [ForeignKey("CinemaId")]
