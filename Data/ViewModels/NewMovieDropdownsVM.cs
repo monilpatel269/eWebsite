@@ -13,9 +13,11 @@ namespace eWebsite.Data.ViewModels
             Producers = new List<Producer>();
             Cinemas = new List<Cinema>();
             Actors = new List<Actor>();
+           // MovieCategory = new List<MovieCategory>();
         }
         public List<Producer> Producers { get; set; }
         public List<Cinema> Cinemas { get; set; }
         public List<Actor> Actors { get; set; }
+       // public List<MovieCategory> MovieCategory { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace eWebsite.Data
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
+      
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             
@@ -32,6 +34,10 @@ namespace eWebsite.Data
         public DbSet<Actor_Movie> Actors_Movies { get; set; }
         public DbSet<Cinema> Cinemas { get; set; }
         public DbSet<Producer> Producers { get; set; }
+        //public DbSet<MovieCategory> MovieCategory { get; set; }
+
+       
+       
 
         //Orders related tables
         public DbSet<Order> Orders { get; set; }

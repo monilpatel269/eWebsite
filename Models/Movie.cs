@@ -33,5 +33,7 @@ namespace eWebsite.Models
         public int ProducerId { get; set; }
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
+       // public int MovieCategoryId { get; set; }
+        
     }
 }

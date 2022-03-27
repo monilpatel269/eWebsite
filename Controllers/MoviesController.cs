@@ -64,7 +64,7 @@ namespace eWebsite.Controllers
             ViewBag.Cinemas = new SelectList(movieDropdownsData.Cinemas, "Id", "Name");
             ViewBag.Producers = new SelectList(movieDropdownsData.Producers, "Id", "FullName");
             ViewBag.Actors = new SelectList(movieDropdownsData.Actors, "Id", "FullName");
-
+           // ViewBag.MovieCategory = new SelectList(movieDropdownsData.MovieCategory, "Id", "Name");
             return View();
         }
 
@@ -78,6 +78,7 @@ namespace eWebsite.Controllers
                 ViewBag.Cinemas = new SelectList(movieDropdownsData.Cinemas, "Id", "Name");
                 ViewBag.Producers = new SelectList(movieDropdownsData.Producers, "Id", "FullName");
                 ViewBag.Actors = new SelectList(movieDropdownsData.Actors, "Id", "FullName");
+               // ViewBag.MovieCategory = new SelectList(movieDropdownsData.MovieCategory, "Id", "Name");
 
                 return View(movie);
             }
@@ -112,6 +113,7 @@ namespace eWebsite.Controllers
             ViewBag.Cinemas = new SelectList(movieDropdownsData.Cinemas, "Id", "Name");
             ViewBag.Producers = new SelectList(movieDropdownsData.Producers, "Id", "FullName");
             ViewBag.Actors = new SelectList(movieDropdownsData.Actors, "Id", "FullName");
+           // ViewBag.MovieCategory = new SelectList(movieDropdownsData.MovieCategory, "Id", "Name");
 
             return View(response);
         }
@@ -128,6 +130,7 @@ namespace eWebsite.Controllers
                 ViewBag.Cinemas = new SelectList(movieDropdownsData.Cinemas, "Id", "Name");
                 ViewBag.Producers = new SelectList(movieDropdownsData.Producers, "Id", "FullName");
                 ViewBag.Actors = new SelectList(movieDropdownsData.Actors, "Id", "FullName");
+                //ViewBag.MovieCategory = new SelectList(movieDropdownsData.MovieCategory, "Id", "Name");
 
                 return View(movie);
             }

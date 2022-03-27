@@ -64,7 +64,8 @@ namespace eWebsite.Data.Services
             {
                 Actors = await _context.Actors.OrderBy(n => n.FullName).ToListAsync(),
                 Cinemas = await _context.Cinemas.OrderBy(n => n.Name).ToListAsync(),
-                Producers = await _context.Producers.OrderBy(n => n.FullName).ToListAsync()
+                Producers = await _context.Producers.OrderBy(n => n.FullName).ToListAsync(),
+                //MovieCategory = 
             };
 
             return response;

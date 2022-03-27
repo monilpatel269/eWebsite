@@ -315,6 +315,8 @@ namespace eWebsite.Data
                     });
                     context.SaveChanges();
                 }
+                //MovieCategory
+               
             }
         }
         public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)

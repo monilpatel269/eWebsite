@@ -50,5 +50,6 @@ namespace eWebsite.Data.ViewModels
         [Display(Name = "Select a producer")]
         [Required(ErrorMessage = "Movie producer is required")]
         public int ProducerId { get; set; }
+        
     }
 }
